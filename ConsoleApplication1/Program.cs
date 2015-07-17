@@ -25,9 +25,9 @@ namespace ConsoleApplication1
 
                 foreach (Match match in regExp.Matches(csProj))
                 {
-                    Console.Out.WriteLine(match.Value);
+                    Console.Out.WriteLine("OldValue:" + match.Value);
+                    Console.Out.WriteLine("NewValue:" + "packages\\" + args[1] + "." + dllVersion + "\\");
                 }
-
             }
         }
     }
